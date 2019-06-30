@@ -10,3 +10,4 @@
 rootProject.name = "frontend.server"
 
 include("app")
+include("data-types")

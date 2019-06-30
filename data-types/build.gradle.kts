@@ -3,7 +3,6 @@ plugins {
     id("org.jetbrains.kotlin.jvm").version("1.3.20")
     id("org.jetbrains.kotlin.kapt").version("1.3.30")
 
-    application
 }
 
 
@@ -21,16 +20,9 @@ dependencies {
     implementation("io.arrow-kt:arrow-extras-extensions:$arrow_version")
     kapt("io.arrow-kt:arrow-meta:$arrow_version")
 
-    implementation(project(":data-types"))
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
-}
-
-application {
-    // Define the main class for the application.
-//    mainClassName = "com.gitlab.neshkeev.AppKt"
-    mainClassName = "com.gitlab.neshkeev.AppKt"
 }
